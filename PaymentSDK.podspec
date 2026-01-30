@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PaymentSDK"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "Pay SDK"
   s.homepage     = "https://github.com/i-gomonchuk/payment-sdk"
 
@@ -9,21 +9,22 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "14.0"
   s.swift_version = "5.0"
 
+  s.preserve_paths = "PaymentSDK.xcframework"
   s.vendored_frameworks = "PaymentSDK.xcframework"
 
   s.source = {
-    :http => "https://nexus.vkteam.ru/repository/raw-vkpay-payments-sdk/1.0.6/PaymentSDK.xcframework.zip",
-    :sha256 => "128b3f59d0a4a911dc55b0eae5a0d26894a5d8795d17474dfcab37764f71a7ff"
+    :http => "https://nexus.vkteam.ru/repository/raw-vkpay-payments-sdk/1.0.7/PaymentSDK.xcframework.zip",
+    :sha256 => "d3643cda7c11963b8fe2d30f82124deb57cfcbde4a00b13a87d81204a5780233"
   }
 
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
-    'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]' => '/PaymentSDK.xcframework/ios-arm64/PaymentSDK.swiftmodule',
-    'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]' => '/PaymentSDK.xcframework/ios-arm64_x86_64-simulator/PaymentSDK.swiftmodule'
+    'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]' => ' /PaymentSDK/PaymentSDK.xcframework/ios-arm64',
+    'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]' => ' /PaymentSDK/PaymentSDK.xcframework/ios-arm64_x86_64-simulator'
   }
 
   s.user_target_xcconfig = {
-    'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]' => '/PaymentSDK.xcframework/ios-arm64/PaymentSDK.swiftmodule',
-    'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]' => '/PaymentSDK.xcframework/ios-arm64_x86_64-simulator/PaymentSDK.swiftmodule'
+    'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]' => ' /PaymentSDK/PaymentSDK.xcframework/ios-arm64',
+    'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]' => ' /PaymentSDK/PaymentSDK.xcframework/ios-arm64_x86_64-simulator'
   }
 end
