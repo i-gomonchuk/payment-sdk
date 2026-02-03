@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "PaymentSDK",
-    platforms: [.iOS(.v14)],
-    products: [.library(name: "PaymentSDK", targets: ["PaymentSDK"])],
-    targets: [
-        .binaryTarget(
-            name: "PaymentSDK",
-            url: "https://nexus.vkteam.ru/repository/raw-vkpay-payments-sdk/1.0.11/PaymentSDK.xcframework.zip",
-            checksum: "37a0d6f6d779d71c34d41dd726f4917ac779f21fd526651713fe87619bad571b"
-        )
-    ]
+  name: "PaymentSDK",
+  platforms: [.iOS(.v14)],
+  products: [.library(name: "PaymentSDK", targets: ["PaymentSDK"])],
+  targets: [
+    .binaryTarget(
+      name: "PaymentSDK",
+      url: "https://raw.githubusercontent.com/i-gomonchuk/payment-sdk/v1.0.13/PaymentSDK.xcframework.zip",
+      checksum: "af7cad52d1dcd69ecf6258d4e6759bba77223521b133cb62487d8aecafd95ec6"
+    )
+  ]
 )
