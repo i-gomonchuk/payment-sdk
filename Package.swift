@@ -8,8 +8,8 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "PaymentSDK",
-      url: "https://raw.githubusercontent.com/i-gomonchuk/payment-sdk/v1.0.13/PaymentSDK.xcframework.zip",
-      checksum: "af7cad52d1dcd69ecf6258d4e6759bba77223521b133cb62487d8aecafd95ec6"
+      url: "https://nexus.vkteam.ru/repository/raw-vkpay-payments-sdk/1.0.14/PaymentSDK.xcframework.zip",
+      checksum: "6e133f6c946f9074c2b661a79ad97efe4cbafdf363cc775ee848fe7dacf0fca3"
     )
   ]
 )
