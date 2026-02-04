@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.preserve_paths      = "PaymentSDK.xcframework"
   s.source = {
     :http => "https://nexus.vkteam.ru/repository/raw-vkpay-payments-sdk/1.0.14/PaymentSDK.xcframework.zip",
-    :sha256 => "81b40c6a494aa9af03fb8407c7e918d91adb81b594dea1fd2d40e7a653caf1ba"
+    :sha256 => "d97c70b77cef65f0a66445a9158ffe1992ba5fea829f1ef8d0a52a97623c5e5a"
   }
 end
